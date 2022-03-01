@@ -22,7 +22,7 @@ export default (props) => (
                 Cross compiles to musl with Netlify's auto-build support.
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
-                Playground
+                Serverless
               </span>
             </div>
             <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm truncate">
