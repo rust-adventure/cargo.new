@@ -21,7 +21,7 @@ export default (props) => (
               <h3 class="text-gray-900 dark:text-white text-sm font-medium truncate">
                 Cross compiles to musl with Netlify's auto-build support.
               </h3>
-              <span class="flex-shrink-0 inline-block px-2 py-0.5 text-orange-800 text-xs font-medium bg-orange-100 rounded-full">
+              <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
                 Playground
               </span>
             </div>
