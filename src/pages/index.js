@@ -55,7 +55,7 @@ export default (props) => (
               </a>
             </div>
             <div
-              class="-ml-px w-0 flex-1 flex"
+              class="-ml-px w-0 flex-1 flex rounded-br-lg"
               style={{ background: "#15847D" }}
             >
               <a
