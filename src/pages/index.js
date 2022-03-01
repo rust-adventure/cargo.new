@@ -1,26 +1,31 @@
 import { h } from "preact";
 
 export default (props) => (
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4">
-    <h1 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+  <div
+    class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-4"
+    // style={{
+    //   background: "#35080b",
+    // }}
+  >
+    <h1 class="text-2xl font-bold leading-7 text-gray-900 dark:text-white sm:text-3xl sm:truncate">
       Deploy a Serverless Function to Netlify!
     </h1>
     <ul
       role="list"
       class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4"
     >
-      <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+      <li class="col-span-1 bg-white dark:bg-slate-800 rounded-lg shadow divide-y divide-gray-200 dark:divide-slate-700">
         <div class="w-full flex items-center justify-between p-6 space-x-6">
           <div class="flex-1 truncate">
             <div class="flex items-center space-x-3">
-              <h3 class="text-gray-900 text-sm font-medium truncate">
+              <h3 class="text-gray-900 dark:text-white text-sm font-medium truncate">
                 Cross compiles to musl with Netlify's auto-build support.
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-orange-800 text-xs font-medium bg-orange-100 rounded-full">
                 Playground
               </span>
             </div>
-            <p class="mt-1 text-gray-500 text-sm truncate">
+            <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm truncate">
               prints "hello, world" to the console using the println! macro
             </p>
           </div>
@@ -31,15 +36,15 @@ export default (props) => (
           /> */}
         </div>
         <div>
-          <div class="-mt-px flex divide-x divide-gray-200">
+          <div class="-mt-px flex divide-x divide-gray-200  dark:divide-slate-700">
             <div class="w-0 flex-1 flex">
               <a
                 href="https://github.com/rust-adventure/netlify-serverless-example-small"
-                class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-400 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 dark:hover:text-slate-200"
               >
                 {/* <!-- Heroicon name: solid/mail --> */}
                 <svg
-                  class="w-5 h-5 text-gray-400"
+                  class="w-5 h-5 text-gray-400 dark:text-slate-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -60,7 +65,7 @@ export default (props) => (
             >
               <a
                 href="https://app.netlify.com/start/deploy?repository=https://github.com/rust-adventure/netlify-serverless-example-small"
-                class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
+                class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-200 font-medium border border-transparent rounded-br-lg hover:text-gray-500 dark:hover:text-slate-400"
               >
                 {/* <!-- Heroicon name: solid/phone --> */}
                 {/* <svg

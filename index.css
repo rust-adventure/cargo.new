@@ -5,5 +5,11 @@
 @tailwind utilities;
 
 body {
-  background: rgb(254 226 226);
+  background: #f8fafc;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f172a;
+  }
 }
