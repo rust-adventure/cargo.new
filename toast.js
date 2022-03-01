@@ -1,7 +1,7 @@
 // import { sourceMdx } from "@toastdotdev/mdx";
 import { compile } from "@mdx-js/mdx";
 import { promises as fs } from "fs";
-import globby from "globby";
+import { globby } from "globby";
 import path from "path";
 import { visit } from "unist-util-visit";
 
