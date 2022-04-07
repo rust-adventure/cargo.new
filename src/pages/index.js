@@ -7,7 +7,7 @@ export default (props) => (
     //   background: "#35080b",
     // }}
   >
-    <h1 class="text-2xl font-bold leading-7 text-gray-900 dark:text-white sm:text-3xl sm:truncate">
+    <h1 class="text-2xl font-bold leading-7 text-gray-900 dark:text-white sm:text-3xl sm:">
       Deploy a Serverless Function to Netlify!
     </h1>
     <ul
@@ -16,16 +16,90 @@ export default (props) => (
     >
       <li class="col-span-1 bg-white dark:bg-slate-800 rounded-lg shadow divide-y divide-gray-200 dark:divide-slate-700">
         <div class="w-full flex items-center justify-between p-6 space-x-6">
-          <div class="flex-1 truncate">
+          <div class="flex-1 ">
             <div class="flex items-center space-x-3">
-              <h3 class="text-gray-900 dark:text-white text-sm font-medium truncate">
+              <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
                 Cross compiles to musl with Netlify's auto-build support.
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
                 Serverless
               </span>
             </div>
-            <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm truncate">
+            <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm ">
+              prints "hello, world" to the console using the println! macro
+            </p>
+          </div>
+          {/* <img
+            class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+            alt=""
+          /> */}
+        </div>
+        <div>
+          <div class="-mt-px flex divide-x divide-gray-200  dark:divide-slate-700">
+            <div class="w-0 flex-1 flex">
+              <a
+                href="https://github.com/rust-adventure/netlify-serverless-example-small"
+                class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-400 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 dark:hover:text-slate-200"
+              >
+                {/* <!-- Heroicon name: solid/mail --> */}
+                <svg
+                  class="w-5 h-5 text-gray-400 dark:text-slate-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="ml-3">View Code</span>
+              </a>
+            </div>
+            <div
+              class="-ml-px w-0 flex-1 flex rounded-br-lg"
+              style={{ background: "#15847D" }}
+            >
+              <a
+                href="https://app.netlify.com/start/deploy?repository=https://github.com/rust-adventure/netlify-serverless-example-small"
+                class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-200 font-medium border border-transparent rounded-br-lg hover:text-gray-500 dark:hover:text-slate-400"
+              >
+                {/* <!-- Heroicon name: solid/phone --> */}
+                {/* <svg
+                  class="w-5 h-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                    clipRule="evenodd"
+                  />
+                </svg> */}
+                <NetlifyDeployButton />
+                <span class="ml-3 hidden">Run Program</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-span-1 bg-white dark:bg-slate-800 rounded-lg shadow divide-y divide-gray-200 dark:divide-slate-700">
+        <div class="w-full flex items-center justify-between p-6 space-x-6">
+          <div class="flex-1 ">
+            <div class="flex items-center space-x-3">
+              <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
+                Cross compiles to musl with Netlify's auto-build support.
+              </h3>
+              <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
+                Serverless
+              </span>
+            </div>
+            <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm ">
               Uses Netlify Identity to authorize users in Serverless Functions
             </p>
           </div>
@@ -65,6 +139,81 @@ export default (props) => (
             >
               <a
                 href="https://app.netlify.com/start/deploy?repository=https://github.com/rust-adventure/netlify-serverless-example-identity"
+                class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-200 font-medium border border-transparent rounded-br-lg hover:text-gray-500 dark:hover:text-slate-400"
+              >
+                {/* <!-- Heroicon name: solid/phone --> */}
+                {/* <svg
+                  class="w-5 h-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                    clipRule="evenodd"
+                  />
+                </svg> */}
+                <NetlifyDeployButton />
+                <span class="ml-3 hidden">Run Program</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col-span-1 bg-white dark:bg-slate-800 rounded-lg shadow divide-y divide-gray-200 dark:divide-slate-700">
+        <div class="w-full flex items-center justify-between p-6 space-x-6">
+          <div class="flex-1 ">
+            <div class="flex items-center space-x-3">
+              <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
+                Cross compiles to musl with Netlify's auto-build support.
+              </h3>
+              <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
+                Serverless
+              </span>
+            </div>
+            <p class="mt-1 text-gray-500 dark:text-slate-400 text-sm ">
+              Queries a PlanetScale SQL database from Netlify Serverless
+              functions
+            </p>
+          </div>
+          {/* <img
+            class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+            alt=""
+          /> */}
+        </div>
+        <div>
+          <div class="-mt-px flex divide-x divide-gray-200  dark:divide-slate-700">
+            <div class="w-0 flex-1 flex">
+              <a
+                href="https://github.com/rust-adventure/netlify-serverless-example-planetscale"
+                class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-400 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 dark:hover:text-slate-200"
+              >
+                {/* <!-- Heroicon name: solid/mail --> */}
+                <svg
+                  class="w-5 h-5 text-gray-400 dark:text-slate-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="ml-3">View Code</span>
+              </a>
+            </div>
+            <div
+              class="-ml-px w-0 flex-1 flex rounded-br-lg"
+              style={{ background: "#15847D" }}
+            >
+              <a
+                href="https://app.netlify.com/start/deploy?repository=https://github.com/rust-adventure/netlify-serverless-example-planetscale"
                 class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 dark:text-slate-200 font-medium border border-transparent rounded-br-lg hover:text-gray-500 dark:hover:text-slate-400"
               >
                 {/* <!-- Heroicon name: solid/phone --> */}
