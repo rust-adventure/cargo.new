@@ -19,7 +19,7 @@ export default (props) => (
           <div class="flex-1 ">
             <div class="flex items-center space-x-3">
               <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
-                Cross compiles to musl with Netlify's auto-build support.
+                Hello World
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
                 Serverless
@@ -93,7 +93,7 @@ export default (props) => (
           <div class="flex-1 ">
             <div class="flex items-center space-x-3">
               <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
-                Cross compiles to musl with Netlify's auto-build support.
+                Netlify Identity
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
                 Serverless
@@ -167,7 +167,7 @@ export default (props) => (
           <div class="flex-1 ">
             <div class="flex items-center space-x-3">
               <h3 class="text-gray-900 dark:text-white text-sm font-medium ">
-                Cross compiles to musl with Netlify's auto-build support.
+                PlanetScale
               </h3>
               <span class="flex-shrink-0 inline-block px-2 py-0.5 text-sky-800 text-xs font-medium bg-sky-100 rounded-full">
                 Serverless
